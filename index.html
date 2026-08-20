@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parse GTM plan — Kurultai</title>
+<meta name="description" content="Parse lead generation plan: seats, segments, todos, Danny-only approve. Nobody sends.">
+<link rel="canonical" href="https://gtm.kurult.ai/">
+<link rel="icon" href="/mark.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0c0a08">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gtm.kurult.ai/">
+<meta property="og:title" content="Parse GTM plan — Kurultai">
+<meta property="og:description" content="Parse lead generation plan: seats, segments, todos, Danny-only approve. Nobody sends.">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="page">
+
+<header class="hero">
+  <p class="kicker">Kurultai · Parse GTM</p>
+  <img class="mark" src="/mark.svg" width="40" height="40" alt="Kurultai mark">
+  <h1>Parse GTM plan</h1>
+  <p class="lede">Screen one untrusted prompt or file. Dated receipt. Assigned seats. Danny-only approve. Nobody sends.</p>
+  <p class="meta">As of 19 Aug 2026 · Host gtm.kurult.ai · x402 OFF</p>
+</header>
+
+<aside class="stops" aria-label="Hard stops">
+  <strong>Hard stops.</strong> x402 OFF. No invented pain, posts, or emails. No Gmail Send. No LinkedIn. Mini CLI approve does not count.
+</aside>
+
+<nav class="toc" aria-label="On this page">
+  <a href="#todos">Todos</a>
+  <a href="#plan">Plan</a>
+  <a href="#edit">Save path</a>
+  <a href="#hook">Wake hook</a>
+</nav>
+
+<section id="todos" class="block" aria-labelledby="todos-h">
+  <header class="block-head">
+    <h2 id="todos-h">Assigned todos</h2>
+    <p>States: blocked → ready → approved → doing → done. Only a <em>ready</em> row can take Danny-only approve. Done unlocks dependents to ready; they do not auto-start.</p>
+  </header>
+
+  <div class="toolbar">
+    <button type="button" id="btn-add" class="btn">Add todo</button>
+    <button type="button" id="btn-download-todos" class="btn">Download todos.json</button>
+    <button type="button" id="btn-reset-cache" class="btn btn-quiet">Clear local cache</button>
+    <a class="btn btn-link" href="https://github.com/Danservfinn/gtm.kurult.ai/edit/main/todos.json" rel="noopener">Edit todos.json on GitHub</a>
+  </div>
+
+  <div id="todo-list" class="todo-list" role="list"></div>
+
+  <div id="approve-panel" class="approve-panel" hidden>
+    <h3>Commit this approve</h3>
+    <p>Browser cache updated. Lasting wake: set <code>state: "approved"</code> in <code>todos.json</code> and append the line below to <code>hooks/approved.jsonl</code>, then push. Cursor GitHub listener (<code>pr-pushed</code>) dispatches SendToAgent. No webhook secret.</p>
+    <pre id="approve-event" class="code"></pre>
+    <div class="toolbar">
+      <button type="button" id="btn-copy-event" class="btn">Copy event line</button>
+      <button type="button" id="btn-download-jsonl" class="btn">Download approved.jsonl append</button>
+      <a class="btn btn-link" href="https://github.com/Danservfinn/gtm.kurult.ai/edit/main/hooks/approved.jsonl" rel="noopener">Edit approved.jsonl on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section id="plan" class="block" aria-labelledby="plan-h">
+  <header class="block-head">
+    <h2 id="plan-h">The plan</h2>
+    <p>Faithful copy of the 2026-08-19 Parse lead-gen plan. Edit below; lasting save is <code>plan.md</code> on this repo.</p>
+  </header>
+  <div class="toolbar">
+    <button type="button" id="btn-download-plan" class="btn">Download plan.md</button>
+    <a class="btn btn-link" href="https://github.com/Danservfinn/gtm.kurult.ai/edit/main/plan.md" rel="noopener">Edit plan.md on GitHub</a>
+  </div>
+  <label class="sr-only" for="plan-editor">Plan text</label>
+  <textarea id="plan-editor" class="plan-editor" spellcheck="true" aria-describedby="plan-h"></textarea>
+</section>
+
+<section id="edit" class="block" aria-labelledby="edit-h">
+  <header class="block-head">
+    <h2 id="edit-h">How Danny saves</h2>
+  </header>
+  <ol class="steps">
+    <li>Edit plan text and todos on this page (titles, seats, <code>depends_on</code>, add/remove). Cache lives in <code>localStorage</code>.</li>
+    <li>Download <code>todos.json</code> / <code>plan.md</code>, or use the GitHub edit links.</li>
+    <li>Commit to <a href="https://github.com/Danservfinn/gtm.kurult.ai">Danservfinn/gtm.kurult.ai</a>. Refresh loads committed files — not a wipe.</li>
+    <li>Approve a ready todo → commit <code>approved</code> state + one <code>hooks/approved.jsonl</code> line. See <a href="/HOOK.md">HOOK.md</a>.</li>
+  </ol>
+</section>
+
+<section id="hook" class="block" aria-labelledby="hook-h">
+  <header class="block-head">
+    <h2 id="hook-h">Khan wake</h2>
+    <p>Documented path only. No minted admin key. Full detail in <a href="/HOOK.md">HOOK.md</a>.</p>
+  </header>
+  <ul class="plain">
+    <li>Event path: Cursor GitHub listener on this repo (<code>pr-pushed</code>) → Grok Bot <strong>SendToAgent</strong> to the seat’s existing id.</li>
+    <li>Assigned khan begins that one task. Nobody sends.</li>
+    <li>Danny-seat approve does not wake a khan (Danny is the user, not a bot).</li>
+  </ul>
+</section>
+
+<footer>
+  <span>Kurultai</span>
+  <a href="https://kurult.ai">kurult.ai</a>
+  <a href="https://www.parsethis.ai/demo">Parse demo</a>
+  <a href="https://github.com/Danservfinn/gtm.kurult.ai" rel="me">Source</a>
+  <a href="/HOOK.md">HOOK.md</a>
+  <span>© 2026 Kurultai</span>
+</footer>
+
+</div>
+<script src="/app.js" defer></script>
+</body>
+</html>
