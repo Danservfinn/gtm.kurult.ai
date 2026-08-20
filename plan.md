@@ -1,6 +1,6 @@
 # Parse lead generation plan
 
-As of 19 Aug 2026, 22:27 ET. Owner of this write-up: Guyuk (outreach drafts). CoS: Temujin. Market: Tolui. Public watch: Duwa. Printed emails: Nogai. Product truth: Ghazan. Approve-and-send: Danny. Nobody sends from a bot.
+As of 20 Aug 2026, 00:15 ET. Owner of this write-up: Guyuk (outreach drafts). CoS: Temujin. Market: Tolui. Public watch: Duwa. Printed emails: Nogai. Product truth: Ghazan. Approve-and-send: Danny. Nobody sends from a bot.
 
 **Offer we can say.** Screen one untrusted prompt or file an agent would read. Leave a dated receipt (risk_score, verdict, flags, disposition, trace id). Demo: https://www.parsethis.ai/demo. Free key is 10 req/min. x402 is OFF. Do not say guarantee, benchmarks, ML classifier, or extra product names. Idle keys expire at 90 days.
 
@@ -58,7 +58,82 @@ They run Claude Code / MCP / an agent as their own work. They do not sell harden
 - MongoDB — watch only until a first-party we-run page exists.
 - Invented names or guessed emails.
 
-## 4. How a name becomes a card
+## 4. Value pyramids
+
+Tolui filed 2026-08-20. Danny asked these on this plan. No invented pain. Guyuk: do not draft a new pack from this. x402 OFF. First paying-customer path (Temujin): T1/T2 plus /demo and a key. Not T3. Not x402.
+
+**How to read a pyramid.** Apex = what they already sell or already run (their page). Mid = their own-page job, quoted. Base = Parse on parsethis.ai. First step = Free /demo + key. Unknown whether they buy, build, or ignore.
+
+**Offer we can say** (https://www.parsethis.ai/llms.txt ; https://www.parsethis.ai/pricing last updated 2026-08-19; GET https://www.parsethis.ai/v1/pricing `enabled: false` as of 2026-08-20 00:11 ET):
+
+- Screen one untrusted prompt or file before an agent gives it authority.
+- Receipt: category, score, action, `trace_id`.
+- Demo: https://www.parsethis.ai/demo
+- Free: 10 req/min, 5 sandbox/hr. Org governance on Free.
+- Draft first paid: Solo $12/mo (operators) or Pro $49/mo (SIEM + evidence packs listed from Pro). Name the live /pricing page when a dollar is used.
+- Do not claim guaranteed protection. Do not quote x402 USDC as checkout.
+
+### A. Hardening consultancies
+
+Names: AY Automate, Fraktional, Silverthread Labs, SFAI Labs. Handed. First-customer lane.
+
+```
+              they keep the audit / hooks / YAML / rollout
+                         (their product, not ours)
+     -------------------------------------------------
+       their pages already name the job:
+       files the agent reads, untrusted MCP,
+       paused rollout / PHI prompt list,
+       no audit trail on agentic workflows,
+       OpenClaw running vs running safely
+     -------------------------------------------------
+              Parse: screen + dated receipt
+           /demo or POST /v1/keys/generate
+     -------------------------------------------------
+         first step: Free $0 then Pro $49/mo draft
+```
+
+| Firm | Their words | Source | as_of |
+|---|---|---|---|
+| AY Automate | The biggest Claude Code security risks are prompt injection through files it reads… untrusted MCP servers… | https://www.ayautomate.com/blog/claude-code-security-risks | 2026-08-19 21:54 ET |
+| Fraktional | The rollout gets paused. Audit question: show me every prompt that touched data classified as PHI, for the last 90 days. | https://www.fraktional.ai/blog/claude-code-rollout-security-guide | 2026-08-19 21:55 ET |
+| Silverthread Labs | no audit trail of actions taken during agentic workflows… For teams under SOC 2, ISO 27001… that's a gap | https://www.silverthreadlabs.com/services/ai-developer-tooling/claude-code-enterprise | 2026-08-19 21:55 ET |
+| SFAI Labs | The gap between Openclaw running and Openclaw running safely for a team is where most enterprise pilots stall. | https://sfailabs.com/guides/openclaw-enterprise-deployment | 2026-08-19 22:00 ET |
+
+### B. SI Claude Code practices
+
+Handed: TIMEWELL. Mapped: GrowExx, Opsio, GP Solutions.
+
+```
+                 they keep the onboarding / WARP engagement
+     -------------------------------------------------
+       their pages already name the job:
+       every input the agent reads is attack surface;
+       we want it and we don't want it in the same companies
+     -------------------------------------------------
+              Parse: screen + dated receipt
+     -------------------------------------------------
+         first step: Free $0 then Pro $49/mo draft
+```
+
+TIMEWELL (as of 2026-08-19 22:00 ET): We want it because it's powerful and We don't want it because of the risk coexist inside the same companies. Every input the agent reads is part of your attack surface. That gap is the actual project. https://timewell.jp/en/columns/claude-code-enterprise-onboarding-complete-guide
+
+### C. Operator teams (lighter)
+
+Not the first-customer path. Judy / Codnity / aiArch rejected. Do not re-hand. GoodBarber / Kiwop unhanded.
+
+```
+                    they keep running the agent
+     -------------------------------------------------
+       their pages say they operate agents or
+       rolled Claude Code to the team
+     -------------------------------------------------
+              Parse: screen + dated receipt
+     -------------------------------------------------
+         if ever handed: Free then Solo $12/mo
+```
+
+## 5. How a name becomes a card
 
 1. Tolui or Temujin hands a firm with own-page quote and URL.
 2. Guyuk refetches the page. Exclude first.
@@ -68,14 +143,14 @@ They run Claude Code / MCP / an agent as their own work. They do not sell harden
 6. Show 2–3 cards in Guyuk chat. Wait. Do not batch until Danny says batch.
 7. On approve: drafts/, ledger, seen.json. Gmail DRAFT on d@kurult.ai only if email+verified. Never Send.
 
-## 5. What is already in motion
+## 6. What is already in motion
 
 - Five overnight Gmail DRAFTs sit on d@kurult.ai (AY, Fraktional, SFAI, Silverthread, TIMEWELL). Not sent.
 - TIMEWELL rewrite: quotes + demo-path receipt (risk_score 10, verdict critical, 11 flags, blocked, trace id). Do not count matched_token on those 11.
 - Operator-team sample rejected. Do not re-ask.
 - LinkedIn remains on hold.
 
-## 6. Next 7 days (list, not assigned work)
+## 7. Next 7 days (list, not assigned work)
 
 1. TIMEWELL in the review room: change / approve / reject.
 2. Five existing Gmail DRAFTs: send, change, or kill. Nobody Sends from a bot.
@@ -84,10 +159,11 @@ They run Claude Code / MCP / an agent as their own work. They do not sell harden
 5. Printed Tos before any new Gmail DRAFT.
 6. Cap stays 2–3 new cards at a time.
 
-## 7. Hard stops
+## 8. Hard stops
 
 - Never Send. Never personal Gmail. Never invent buyer pain, posts, or emails.
 - x402 OFF. Do not quote USDC as checkout.
 - Do not draft Sierra, Ripple, Upbound, Judy, Codnity, or aiArch again unless Danny reopens them.
 - Do not copy guyuk-gtm sqlite. Do not touch Parse prod admin, New Bot, Parse Media, or Hulegu.
 - Nobody sends email or LinkedIn.
+- Do not draft a new pack from the value pyramids alone.
