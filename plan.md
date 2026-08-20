@@ -35,7 +35,7 @@ They sell Claude Code / OpenClaw / MCP hardening as consulting. Ghazan cannot so
 | Fraktional | kai@fraktional.ai | Gmail DRAFT exists. Approve-to-send still Danny. |
 | SFAI Labs | hello@sfailabs.com | Gmail DRAFT exists. Approve-to-send still Danny. |
 | Silverthread Labs | silverthreadlabs@gmail.com (printed company Gmail) | Gmail DRAFT exists. Flag stays. |
-| TIMEWELL (SI practices) | timewell@timewell.jp | Gmail DRAFT exists. Collective rewrite in TIMEWELL room. Demo closer. Drop Pro $49 unless live /pricing is named. |
+| TIMEWELL (SI practices) | timewell@timewell.jp | Gmail DRAFT exists. Collective rewrite in TIMEWELL room. Demo closer. |
 | Opsio | info@opsio.se | LinkedIn approved then held. Email deprioritized. |
 | GP Solutions | | Mapped, not handed. |
 

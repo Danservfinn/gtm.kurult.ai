@@ -1,6 +1,6 @@
 # Value pyramids — first markets
 
-As of 20 Aug 2026. Owner: Tolui. Temujin review: A/B/C and quoted pages hold. Park $12/$49 on the first-step line — Ghazan could not source those from live Parse pages. First step is /demo plus a key. No invented pain. Do not draft a new pack from this. x402 OFF.
+As of 20 Aug 2026. Owner: Tolui. Temujin review: A/B/C and quoted pages hold. Monthly dollar figures stay off the first-step line — Ghazan could not source them from live Parse pages. First step is /demo plus a key. No invented pain. Do not draft a new pack from this. x402 OFF.
 
 Source: brain note `projects/tolui-market/value-pyramids.md` (as_of 2026-08-20 00:48 ET, 8 sources).
 
@@ -14,9 +14,9 @@ Sources: https://www.parsethis.ai/llms.txt ; https://www.parsethis.ai/pricing (l
 - Free key: 10 req/min, 5 sandbox/hr. Org governance on Free. `POST /v1/keys/generate`.
 - Do not claim guaranteed protection. Do not quote x402 USDC as checkout.
 
-First paying-customer path (Temujin): T1/T2 plus /demo and a key. Not T3. Not x402. Not $12/$49 on the first-step line.
+First paying-customer path (Temujin): T1/T2 plus /demo and a key. Not T3. Not x402. No monthly dollar figures on the first-step line.
 
-Parked draft dollars (not first-step; Ghazan could not source monthly $ from live Parse pages for this line): Solo $12/mo and Pro $49/mo appeared on https://www.parsethis.ai/pricing as of 2026-08-19. Do not put them on cards until Ghazan sources them live.
+Parked: monthly draft dollars stay off cards and the first-step line until Ghazan sources them from live Parse pages.
 
 ## How to read a pyramid
 
