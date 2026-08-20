@@ -58,6 +58,56 @@ They run Claude Code / MCP / an agent as their own work. They do not sell harden
 - MongoDB — watch only until a first-party we-run page exists.
 - Invented names or guessed emails.
 
+### Value pyramids — first markets (Tolui, GTM)
+
+From brain note `projects/tolui-market/value-pyramids.md` (as_of 2026-08-20 00:48 ET). Full page with quoted evidence: [value-pyramids.md](/value-pyramids.md). Hub: [tolui-hub.md](/tolui-hub.md) — Tolui = GTM. Temujin review: markets and quoted pages hold. Do not draft a new pack from this. First step on every pyramid is /demo plus a key. Monthly draft dollars stay off the first-step line until Ghazan sources them from live Parse pages.
+
+How to read a pyramid: apex = what they already sell or already run (their page). Mid = their own-page job, quoted. Base = Parse on parsethis.ai. Unknown whether they buy, build, or ignore.
+
+**Market A — Hardening consultancies.** Handed. First-customer lane.
+
+```
+              they keep the audit / hooks / YAML / rollout
+                         (their product, not ours)
+     -------------------------------------------------
+       their pages already name the job:
+       files the agent reads, untrusted MCP,
+       paused rollout / PHI prompt list,
+       no audit trail on agentic workflows,
+       OpenClaw running vs running safely
+     -------------------------------------------------
+              Parse: screen + dated receipt
+     -------------------------------------------------
+         first step: /demo plus a key
+```
+
+**Market B — SI Claude Code practices.** Handed: TIMEWELL. Mapped: GrowExx, Opsio, GP Solutions.
+
+```
+                 they keep the onboarding / WARP engagement
+     -------------------------------------------------
+       their pages already name the job:
+       every input the agent reads is attack surface;
+       we want it and we don't want it in the same companies
+     -------------------------------------------------
+              Parse: screen + dated receipt
+     -------------------------------------------------
+         first step: /demo plus a key
+```
+
+**Market C — Operator teams (lighter).** Not the first-customer path. Judy / Codnity / aiArch rejected. Do not re-hand. GoodBarber / Kiwop unhanded.
+
+```
+                    they keep running the agent
+     -------------------------------------------------
+       their pages say they operate agents or
+       rolled Claude Code to the team
+     -------------------------------------------------
+              Parse: screen + dated receipt
+     -------------------------------------------------
+         first step if ever handed: /demo plus a key
+```
+
 ## 4. How a name becomes a card
 
 1. Tolui or Temujin hands a firm with own-page quote and URL.
