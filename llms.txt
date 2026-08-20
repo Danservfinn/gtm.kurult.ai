@@ -1,0 +1,13 @@
+# Parse GTM plan — Kurultai
+> Public host for the Parse lead-gen plan: seats, segments, todos, Danny-only approve. Nobody sends.
+
+## About
+- [GTM plan](https://gtm.kurult.ai): Parse lead generation plan and assigned todos
+- [Kurultai](https://kurult.ai): lab front page — identity, ledger, directory
+
+## Product
+- [ParseThis](https://www.parsethis.ai): agent governance platform
+- [Parse demo](https://www.parsethis.ai/demo): screen one untrusted prompt or file
+
+## Code
+- [GitHub](https://github.com/Danservfinn/gtm.kurult.ai): this site’s source

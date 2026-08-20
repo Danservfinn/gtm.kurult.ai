@@ -1,0 +1,79 @@
+{
+  "updated": "2026-08-20",
+  "todos": [
+    {
+      "id": "T1",
+      "title": "Decide TIMEWELL rewrite",
+      "seat": "Danny",
+      "depends_on": [],
+      "state": "ready"
+    },
+    {
+      "id": "T2",
+      "title": "Decide five overnight Gmail DRAFTs",
+      "seat": "Danny",
+      "depends_on": [],
+      "state": "ready"
+    },
+    {
+      "id": "T3",
+      "title": "Next firm with own-page quote + last-two-weeks fact",
+      "seat": "Tolui",
+      "depends_on": [
+        "T1",
+        "T2"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "T4",
+      "title": "Printed To on a public page",
+      "seat": "Nogai",
+      "depends_on": [
+        "T3"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "T5",
+      "title": "Draft 2-3 cards in Danny voice + Duwa craft",
+      "seat": "Guyuk",
+      "depends_on": [
+        "T4"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "T6",
+      "title": "Confirm receipt numbers on any new proof line",
+      "seat": "Ghazan",
+      "depends_on": [
+        "T5"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "T7",
+      "title": "Public watch + craft only",
+      "seat": "Duwa",
+      "depends_on": [],
+      "state": "ready"
+    },
+    {
+      "id": "T8",
+      "title": "Train / hand / hold",
+      "seat": "Temujin",
+      "depends_on": [],
+      "state": "ready"
+    },
+    {
+      "id": "T9",
+      "title": "Say batch before GoodBarber or Kiwop",
+      "seat": "Danny",
+      "depends_on": [
+        "T5"
+      ],
+      "state": "blocked"
+    }
+  ]
+}
