@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parse outreach board — Kurultai</title>
+<meta name="description" content="Parse outbound status: queue, approvals, gates. Sent 0. Success unknown until a send exists. Baked snapshot, no invented numbers.">
+<link rel="canonical" href="https://gtm.kurult.ai/outreach.html">
+<link rel="icon" href="/mark.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f6f4f0">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gtm.kurult.ai/outreach.html">
+<meta property="og:title" content="Parse outreach board — Kurultai">
+<meta property="og:description" content="Parse outbound status: queue, approvals, gates. Sent 0. Success unknown until a send exists.">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/outreach.css">
+</head>
+<body class="board">
+<div class="page">
+
+<header class="hero">
+  <p class="kicker">Kurultai · Parse GTM · Outreach</p>
+  <img class="mark" src="/mark.svg" width="40" height="40" alt="Kurultai mark">
+  <h1>Outreach board</h1>
+  <p class="lede">Parse outbound exactly as it stands: the queue, the gates, and what is still unknown. Rendered from a snapshot committed to this repo — never a live mailbox.</p>
+  <p class="meta" id="board-meta">Snapshot 28 Aug 2026 · 22:29 ET · sent 0 · LinkedIn global hold · x402 OFF</p>
+</header>
+
+<aside class="stops" aria-label="Hard stops">
+  <strong>Not a success dashboard.</strong> Sent = 0. No opens, replies, CTR, MRR, or /attack clicks exist yet. Every unknown below is printed as <em>unknown</em> — never estimated, never invented.
+</aside>
+
+<nav class="toc" aria-label="On this page">
+  <a href="#tally">Tally</a>
+  <a href="#queue">Queue</a>
+  <a href="#gates">Gates</a>
+  <a href="#guardrails">Copy guardrails</a>
+  <a class="toc-back" href="/">← GTM plan</a>
+</nav>
+
+<section id="tally" class="block" aria-labelledby="tally-h">
+  <header class="block-head">
+    <h2 id="tally-h">Tally</h2>
+    <p>Only the counts the snapshot supports. Success counters stay <em>unknown</em> until a send exists — sent is 0, so they are all unknown.</p>
+  </header>
+  <div id="tiles" class="tiles" role="list"></div>
+</section>
+
+<section id="queue" class="block" aria-labelledby="queue-h">
+  <header class="block-head">
+    <h2 id="queue-h">Queue</h2>
+    <p>States as of the snapshot, 28 Aug 2026 · 22:29 ET. The snapshot does not record per-row action dates; a missing date prints as <em>not recorded</em>. To addresses appear only when already printed in the snapshot.</p>
+  </header>
+  <div class="toolbar">
+    <a class="btn btn-link" href="https://github.com/Danservfinn/gtm.kurult.ai/edit/main/outreach.json" rel="noopener">Edit outreach.json on GitHub</a>
+    <a class="btn btn-link" href="/outreach.json">Raw snapshot</a>
+  </div>
+  <div id="board-groups"></div>
+  <noscript><p class="hint">This board renders <a href="/outreach.json">outreach.json</a> in the browser. JavaScript is off — read the raw snapshot instead.</p></noscript>
+</section>
+
+<section id="gates" class="block" aria-labelledby="gates-h">
+  <header class="block-head">
+    <h2 id="gates-h">Gates</h2>
+    <p>Danny-only approve. Temujin is the only send path. Nobody else sends.</p>
+  </header>
+  <ol class="gaterail" aria-label="Send path">
+    <li><span class="gr-step">card in Guyuk chat</span></li>
+    <li><span class="gr-step gr-gate">approve — Danny</span></li>
+    <li><span class="gr-step">gmail draft on ledger</span></li>
+    <li><span class="gr-step gr-gate">Temujin send</span></li>
+    <li><span class="gr-step gr-zero">sent · 0 so far</span></li>
+  </ol>
+  <ul class="offramps">
+    <li><span class="chip" data-status="hold">hold</span> parked at any point — includes the global LinkedIn hold.</li>
+    <li><span class="chip" data-status="suppressed_competitor">suppressed</span> competitor — never sends.</li>
+    <li><span class="chip" data-status="rejected">rejected</span> closed in seen.json.</li>
+  </ul>
+</section>
+
+<section id="guardrails" class="block" aria-labelledby="guardrails-h">
+  <header class="block-head">
+    <h2 id="guardrails-h">Copy guardrails</h2>
+    <p>What outbound copy may claim about the product today, from live parsethis.ai.</p>
+  </header>
+  <ul class="plain">
+    <li>CTA path is <code>/attack</code>, then the $47 <code>/audit</code>. Never print $49.</li>
+    <li>x402 is OFF.</li>
+    <li>No SOC 2 Type II attestation — do not claim it.</li>
+    <li>No guaranteed protection — do not claim it.</li>
+  </ul>
+</section>
+
+<footer>
+  <span>Kurultai</span>
+  <a href="/">GTM plan</a>
+  <a href="https://github.com/Danservfinn/gtm.kurult.ai" rel="me">Source</a>
+  <a href="mailto:d@kurult.ai">d@kurult.ai</a>
+  <span>© 2026 Kurultai</span>
+</footer>
+
+</div>
+<script src="/outreach.js" defer></script>
+</body>
+</html>

@@ -3,6 +3,7 @@
 
 ## About
 - [GTM plan](https://gtm.kurult.ai): Parse lead generation plan and assigned todos
+- [Outreach board](https://gtm.kurult.ai/outreach.html): Parse outbound status — queue, gates, unknowns; sent 0
 - [Kurultai](https://kurult.ai): lab front page — identity, ledger, directory
 
 ## Product
