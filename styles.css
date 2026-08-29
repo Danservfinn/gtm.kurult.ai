@@ -94,6 +94,24 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   margin-bottom:.35rem;
 }
 
+.board-link{
+  margin-top:1rem;
+  padding:1rem 1.1rem;
+  background:var(--panel);
+  border:1px solid var(--gold-line);
+  border-left:3px solid var(--gold);
+  max-width:42rem;
+  display:grid;
+  gap:.2rem;
+}
+.board-link a{
+  font-family:var(--font-m);
+  font-size:max(12px,.78rem);
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.board-link span{font-size:.9rem;color:var(--mute)}
+
 .toc{
   display:flex;
   flex-wrap:wrap;
