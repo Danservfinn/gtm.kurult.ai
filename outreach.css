@@ -1,0 +1,253 @@
+/* Outreach board — extends styles.css tokens. Loaded only on /outreach.html. */
+
+body.board::before{
+  content:"";
+  position:fixed;
+  top:0;left:0;right:0;
+  height:3px;
+  background:linear-gradient(to right,var(--gold-line),var(--ember),var(--gold-line));
+  z-index:10;
+}
+
+.toc-back{margin-left:auto}
+
+/* ---- Tally tiles ---- */
+
+.tiles{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));
+  gap:.75rem;
+  margin-top:1.5rem;
+}
+.tile{
+  background:var(--panel);
+  border:1px solid var(--line);
+  padding:1rem 1.05rem 1.1rem;
+  display:grid;
+  gap:.3rem;
+  align-content:start;
+}
+.tile-n{
+  font-family:var(--font-m);
+  font-size:clamp(1.7rem,3vw,2.3rem);
+  font-weight:600;
+  line-height:1.1;
+  color:var(--ink);
+  font-variant-numeric:tabular-nums;
+}
+.tile-l{
+  font-family:var(--font-m);
+  font-size:max(12px,.72rem);
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--mute);
+}
+.tile-note{font-size:.82rem;color:var(--mute)}
+.tile[data-kind="unknown"]{
+  border-style:dashed;
+  background:transparent;
+}
+.tile[data-kind="unknown"] .tile-n{
+  font-size:1.05rem;
+  font-style:italic;
+  font-weight:400;
+  letter-spacing:.04em;
+  color:var(--mute);
+  padding:.45rem 0 .2rem;
+}
+.tile[data-key="sent"]{
+  border-color:var(--gold-line);
+  box-shadow:inset 0 3px 0 var(--gold-line);
+}
+.tile[data-key="sent"] .tile-n{color:var(--gold)}
+.tile-flag{
+  font-family:var(--font-m);
+  font-size:max(11px,.68rem);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--no);
+}
+
+/* ---- Queue groups + table ---- */
+
+.qgroup{margin-top:2.1rem}
+.qgroup:first-child{margin-top:1.4rem}
+.qgroup-head{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:.4rem 1rem;
+  border-left:3px solid var(--gold-line);
+  padding-left:.75rem;
+  margin-bottom:.8rem;
+}
+.qgroup-head h3{
+  font-size:1.08rem;
+  font-weight:600;
+  color:var(--ink);
+}
+.qgroup-src{
+  font-family:var(--font-m);
+  font-size:max(11px,.7rem);
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--mute);
+}
+
+.qwrap{overflow-x:auto}
+.qtable{
+  width:100%;
+  min-width:56rem;
+  border-collapse:collapse;
+  background:var(--panel);
+  border:1px solid var(--line);
+}
+.qtable th{
+  font-family:var(--font-m);
+  font-size:max(11px,.7rem);
+  font-weight:400;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--mute);
+  text-align:left;
+  padding:.6rem .75rem;
+  border-bottom:1px solid var(--gold-line);
+  white-space:nowrap;
+}
+.qtable td{
+  padding:.7rem .75rem .75rem;
+  border-bottom:1px solid var(--line);
+  vertical-align:top;
+  font-size:.92rem;
+}
+.qtable tbody tr:last-child td{border-bottom:0}
+.qtable tbody tr:hover{background:#fbfaf6}
+
+.q-name{font-weight:600;color:var(--ink)}
+.q-pos{
+  font-family:var(--font-m);
+  font-size:max(11px,.7rem);
+  color:var(--gold);
+  margin-right:.4rem;
+}
+.q-detail{display:block;font-size:.84rem;color:var(--mute);margin-top:.1rem}
+.q-notes{display:block;font-size:.8rem;color:var(--ember);margin-top:.25rem}
+
+.cell-sub{display:block;font-size:.8rem;color:var(--mute);margin-top:.2rem}
+.to-code{font-family:var(--font-m);font-size:.82rem;color:var(--ink-dim);word-break:break-all}
+.to-muted{color:var(--mute);font-size:.86rem}
+.chan{font-family:var(--font-m);font-size:.8rem;color:var(--ink-dim)}
+
+/* ---- Status + success chips ---- */
+
+.chip{
+  display:inline-block;
+  font-family:var(--font-m);
+  font-size:max(12px,.7rem);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  padding:.2rem .45rem;
+  border:1px solid var(--line);
+  color:var(--mute);
+  background:var(--panel);
+  white-space:nowrap;
+}
+.chip[data-status="waiting_approve"]{color:var(--gold);border-color:var(--gold)}
+.chip[data-status="hold"],
+.chip[data-status="approved_held"]{color:var(--hold);border-color:var(--hold)}
+.chip[data-status="gmail_draft_pending_send"]{color:var(--ok);border-color:var(--ok)}
+.chip[data-status="suppressed_competitor"]{color:var(--no);border-color:var(--no)}
+.chip[data-status="rejected"]{color:var(--mute);border-color:var(--line)}
+.chip[data-status="test_draft"]{color:var(--mute);border-style:dashed}
+.chip-unknown{
+  border-style:dashed;
+  color:var(--mute);
+  font-style:italic;
+  text-transform:none;
+  letter-spacing:.04em;
+}
+.chip-na{color:var(--mute);border-color:transparent;padding-left:0}
+.chip-mismatch{color:var(--no);border-color:var(--no)}
+
+.gate{
+  font-family:var(--font-m);
+  font-size:.8rem;
+  color:var(--ink-dim);
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  white-space:nowrap;
+}
+.gate[data-gate="approve"]{color:var(--gold)}
+.gate[data-gate="temujin_send"]{color:var(--ok)}
+.gate[data-gate="hold"]{color:var(--hold)}
+.gate[data-gate="none"]{color:var(--mute)}
+
+/* ---- Gate rail ---- */
+
+.gaterail{
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.6rem;
+  margin-top:1.4rem;
+  font-family:var(--font-m);
+}
+.gaterail li{display:flex;align-items:center;gap:.6rem}
+.gaterail li + li::before{
+  content:"→";
+  color:var(--gold);
+  font-size:.9rem;
+}
+.gr-step{
+  font-size:max(12px,.74rem);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--ink-dim);
+  border:1px solid var(--line);
+  background:var(--panel);
+  padding:.35rem .6rem;
+}
+.gr-gate{color:var(--gold);border-color:var(--gold)}
+.gr-zero{color:var(--mute);border-style:dashed}
+
+.offramps{
+  list-style:none;
+  margin-top:1.1rem;
+  display:grid;
+  gap:.5rem;
+  max-width:42rem;
+  color:var(--mute);
+  font-size:.92rem;
+}
+.offramps li{display:flex;align-items:baseline;gap:.55rem}
+
+/* ---- Narrow screens: table rows become cards ---- */
+
+@media (max-width:56rem){
+  .qwrap{overflow-x:visible}
+  .qtable{min-width:0;border:0;background:transparent}
+  .qtable thead{display:none}
+  .qtable,.qtable tbody,.qtable tr,.qtable td{display:block;width:100%}
+  .qtable tr{
+    background:var(--panel);
+    border:1px solid var(--line);
+    padding:.9rem .9rem 1rem;
+    margin-bottom:.8rem;
+    display:grid;
+    gap:.6rem;
+  }
+  .qtable tbody tr:hover{background:var(--panel)}
+  .qtable td{border:0;padding:0;font-size:.95rem}
+  .qtable td::before{
+    content:attr(data-th);
+    display:block;
+    font-family:var(--font-m);
+    font-size:max(11px,.66rem);
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--mute);
+    margin-bottom:.2rem;
+  }
+  .qtable td:first-child::before{display:none}
+}
